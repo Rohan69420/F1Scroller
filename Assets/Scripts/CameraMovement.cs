@@ -6,23 +6,32 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     //Camera MainCamera;
-    private Vector3 lastMousePos;
+    public float movementScale=1.0f;
+    private Vector3 lastMousePos,registeredPosition;
+    private bool held=false;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            held = true;
             lastMousePos = Input.mousePosition;
+        }
+
+        if (held == true && registeredPosition!=Input.mousePosition)
+        {
+            RotationUpdater(lastMousePos, Input.mousePosition);
+            registeredPosition=Input.mousePosition;
         }
         
         if(Input.GetMouseButtonUp(0))
         {
-            RotationUpdater(lastMousePos, Input.mousePosition);
+            held = false;
         }
     }
 
     void RotationUpdater(Vector3 lastMousePos, Vector3  currentMousePos)
     {
-        transform.Rotate(lastMousePos.x-currentMousePos.x,lastMousePos.y-currentMousePos.y,lastMousePos.z-currentMousePos.z);
+        transform.Rotate(movementScale*(lastMousePos.y-currentMousePos.y),-movementScale*(lastMousePos.x-currentMousePos.x),0);
     }
 }

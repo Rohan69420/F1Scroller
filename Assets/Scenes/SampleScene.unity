@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 217668746}
+  - component: {fileID: 217668747}
   m_Layer: 0
   m_Name: CameraDolly
   m_TagString: Untagged
@@ -146,7 +147,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217668745}
-  m_LocalRotation: {x: -0.00092811394, y: 0.981113, z: -0.19337595, w: -0.004708883}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2469363, y: 0, z: -1.5190132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,7 +155,20 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 22.3, y: 180.55, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &217668747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217668745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886fd9b9f389db840bd3bf392efa7764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementScale: 1
 --- !u!1001 &320150105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -430,11 +444,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.23251188, y: 0, z: 0, w: 0.97259355}
-  m_LocalPosition: {x: 0.2630639, y: 1.38, z: -2.94}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.26, y: 0.11, z: -2.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 217668746}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 26.89, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
