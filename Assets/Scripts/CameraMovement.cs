@@ -32,6 +32,6 @@ public class CameraMovement : MonoBehaviour
 
     void RotationUpdater(Vector3 lastMousePos, Vector3  currentMousePos)
     {
-        transform.Rotate(movementScale*(lastMousePos.y-currentMousePos.y),-movementScale*(lastMousePos.x-currentMousePos.x),0);
+        transform.Rotate(0,-movementScale*(lastMousePos.x-currentMousePos.x), -movementScale * (lastMousePos.y - currentMousePos.y));
     }
 }
