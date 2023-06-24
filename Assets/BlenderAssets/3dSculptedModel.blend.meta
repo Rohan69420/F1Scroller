@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3754f1f549f92a34d981ab30d84cab89
+guid: c2bd9a45254497d4285f9a7f89233b9d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -17,8 +17,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Blues
+    second: {fileID: 2100000, guid: e839460de85e3aa49917448808779afe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bodydecor
+    second: {fileID: 2100000, guid: f24d1bf7a3fdc1a42b38764220a9a823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ChassisPaint
     second: {fileID: 2100000, guid: e142fe1c3da576b48baeb6f4bf61fb7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Finstripes
+    second: {fileID: 2100000, guid: d1cb277058d7a7949b55e1cb98870d44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Midsection
+    second: {fileID: 2100000, guid: cf054ec06de46284d987ecf01b503d17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rearhalf
+    second: {fileID: 2100000, guid: fa45dfb8e34e4d340ba38ceda17001d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suspensions
+    second: {fileID: 2100000, guid: e793a8cdf07c58d45a5524a87d948a69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -63,11 +93,11 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
-    importLights: 0
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 1
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -90,10 +120,10 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 0
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
+    blendShapeNormalImportMode: 0
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
